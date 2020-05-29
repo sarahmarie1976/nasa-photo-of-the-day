@@ -1,38 +1,74 @@
-.App {
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  overflow-x: hidden;
+  background-color: #56a9ad;
+  background-image: url("https://i.postimg.cc/GtWZ3RJ9/jason-blackeye-l-GPYNHy891-E-unsplash.jpg");
+  background-size: stretch;
+  background-repeat: repeat;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  color: whitesmoke;
+  margin: 0;
+}
+h1 {
+  color:whitesmoke;
+  font-size: 50px;
   text-align: center;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo_container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background: rgba(225, 225, 225, 1);
+}
+.nasa-image {
+  width: 900px;
+  height: 750px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(225, 225, 225);
+  
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  color: whitesmoke;
+  font-size: 25px;
+  background: transparent;
+  margin: 0;
+  padding: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nasa-data {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  margin: 20px auto;
+  max-width: 900px;
+}
+.pic-list {
+  background: transparent;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+p {
+  padding: 10px;
+}
+p:nth-child(2) {
+  padding: 10px;
+  font-size: 18px;
+  display: block; /* or inline-block */
+  text-overflow: ellipsis;
+  word-wrap: no-wrap;
+  overflow: hidden;
+  max-height: 10em;
+  line-height: 1.2em;
 }
